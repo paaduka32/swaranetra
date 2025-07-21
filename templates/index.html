@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Swarnanetra 👁</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+    <script src="{{ url_for('static', filename='js/script.js') }}" defer></script> <!-- External JS -->
+</head>
+<body>
+    <div class="container">
+        <h1>ESP32 Camera Tasks</h1>
+        <form method="POST">
+            <button type="submit" name="task" value="ocr">Perform OCR</button>
+            <button type="submit" name="task" value="scene">Scene Description</button>
+        </form>
+
+        {% if result %}
+            <h3>Result:</h3>
+            <p id="result-text">{{ result }}</p> <!-- Add an ID to the result paragraph -->
+        {% endif %}
+
+        {% if result == "Error: Could not grab frame from ESP32 stream." %}
+            <p class="error">{{ result }}</p>
+        {% endif %}
+    </div>
+</body>
+</html>

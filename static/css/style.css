@@ -1,0 +1,121 @@
+/* General body settings */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: #f7f7f7;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+}
+
+/* Container for form elements */
+.container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    padding: 40px 50px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    width: 450px;
+    text-align: center;
+    transform: scale(1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover effect for the container */
+.container:hover {
+    transform: scale(1.05);
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+}
+
+/* Title styling */
+h1 {
+    color: #333;
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Buttons styling */
+button {
+    background-color: #4CAF50;
+    color: white;
+    font-size: 1.2em;
+    padding: 15px 30px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    width: 100%;
+    margin: 15px 0;
+    box-sizing: border-box;
+    transition: background-color 0.3s, transform 0.2s ease;
+    font-weight: 500;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-3px);
+}
+
+button:active {
+    background-color: #388e3c;
+    transform: translateY(1px);
+}
+
+/* Result text area */
+h3 {
+    font-size: 1.6em;
+    margin-top: 25px;
+    color: #333;
+    font-weight: 600;
+}
+
+/* Result content area */
+p {
+    background-color: #e0ffe0;
+    padding: 20px;
+    border-radius: 10px;
+    font-size: 1.2em;
+    line-height: 1.5;
+    color: #4CAF50;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    white-space: pre-wrap; /* to preserve new lines */
+}
+
+/* Error message styling */
+.error {
+    color: #f44336;
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+/* Input button and form alignment */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+    .container {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    button {
+        font-size: 1.1em;
+        padding: 12px 25px;
+    }
+
+    h3 {
+        font-size: 1.4em;
+    }
+}
