@@ -59,7 +59,7 @@ Hardware::
 2. Update the `ESP32_STREAM_URL` in `app.py` with your ESP32’s IP.  
 3. Run the script to the flask interface
 
-##Contributors
+## Contributors
 **[Paaduka32](https://github.com/paaduka32)** 
 **[Manohara-Ai](https://github.com/Manohara-Ai)** 
 
