@@ -25,7 +25,7 @@ Swaranetra bridges IoT and AI for accessibility. It streams frames from an **ESP
 1. **Scene Description** – generating natural language descriptions of the captured scene using **BLIP-2**.  
 2. **OCR Pipeline** – extracting and refining text from the environment using **Tesseract OCR**, **SpellChecker**, and **Grammar Correction** (via spaCy + LanguageTool).  
 
----
+
 
 ## Features  
 
